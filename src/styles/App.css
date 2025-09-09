@@ -1,1 +1,38 @@
+.game {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.levels_container {
+  margin: 20px;
+}
+
+.cells_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  background: #444;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.tile.flipped {
+  background: #61dafb;
+  color: black;
+  font-weight: bold;
+}
 
